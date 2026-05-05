@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalogo</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+    
+<!-- ════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+      <span class="brand-icon"><i class="bi bi-drone"></i></span>
+      <span>Aero<strong>Digital</strong></span>
+    </a>
+    <button class="navbar-toggler border-0" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-lg-1">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html#sobre">Sobre</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html#solucao">Solução</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html#parceiros">Parceiros</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html#plano">Plano</a></li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="/catalogo.html">Catálogo</a></li>
+        <li class="nav-item ms-lg-2 mt-1">
+          <a class="nav-link btn-nav" href="index.html#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- ════════════════════════════════════════════
+     CATÁLOGO — produtos de exemplo
+════════════════════════════════════════════ -->
+<section id="catalogo" class="section-light py-5">
+  <div class="container py-4">
+    <div class="section-label text-center mb-2">Catálogo</div>
+    <h2 class="section-title text-center mb-2">Produtos em Destaque</h2>
+    <p class="section-sub text-center mb-4">Exemplo de como sua vitrine digital irá aparecer para os clientes.</p>
+
+    <!-- Filtros -->
+    <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" id="filterBtns">
+      <button class="btn btn-filter active" data-filter="todos">Todos</button>
+      <button class="btn btn-filter" data-filter="agricola">Agrícola</button>
+      <button class="btn btn-filter" data-filter="foto">Fotografia</button>
+      <button class="btn btn-filter" data-filter="servico">Serviços</button>
+    </div>
+
+    <div class="row g-4" id="productGrid">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-cat="agricola">
+        <div class="product-card h-100 bg-light bg-gradient">
+          <div class="pc-img">
+            <img class="pc-img" src="imagemdrone1.png" alt="">
+            <i class="bi bi-drone"></i>
+            <span class="pc-badge">Agrícola</span>
+          </div>
+          <div class="pc-body">
+            <h6 class="pc-name">DJI Agras T40</h6>
+            <p class="pc-desc">Drone agrícola de alta capacidade com tanque de 40L, ideal para lavouras do Centro-Oeste.</p>
+            <div class="pc-footer">
+              <span class="pc-price">R$ 42.990,00</span>
+              <br>
+              <span class="pc-juros">Em até 10x R$ 420,99 sem juros</span>
+              <br>
+            </div>
+            <span class="pc-frete">Frete Gratis</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-cat="foto">
+        <div class="product-card h-100 bg-light bg-gradient">
+          <div class="pc-img">
+            <img class="pc-img" src="imagemdrone2.webp" alt="">
+            <i class="bi bi-drone"></i>
+            <span class="pc-badge">Fotografia</span>
+          </div>
+          <div class="pc-body">
+            <h6 class="pc-name">DJI Mini 4 Pro</h6>
+            <p class="pc-desc">Câmera 4K, 34 min de voo e menos de 249g. Perfeito para fotografia e vídeo profissional.</p>
+            <div class="pc-footer">
+              <span class="pc-price">R$ 8.990,00</span>
+              <br>
+              <span class="pc-juros">Em até 10x R$ 80,99 sem juros</span>
+              <br>
+            </div>
+            <span class="pc-frete">Frete Gratis</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-cat="agricola">
+        <div class="product-card h-100 bg-light bg-gradient">
+           <div class="pc-img">
+            <img class="pc-img" src="imagemdrone5.webp" alt="">
+            <i class="bi bi-drone"></i>
+            <span class="pc-badge">agrícola</span>
+          </div>
+          <div class="pc-body">
+            <h6 class="pc-name">DJI Agras T25</h6>
+            <p class="pc-desc">Versão compacta para pequenas e médias propriedades rurais. Excelente custo-benefício.</p>
+            <div class="pc-footer">
+              <span class="pc-price">R$ 11.990,00</span>
+              <br>
+              <span class="pc-juros">Em até 36x R$ 550,55 sem juros</span>
+              <br>
+            </div>
+            <span class="pc-frete">Frete Gratis</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-cat="servico">
+        <div class="product-card h-100 bg-light bg-gradient">
+           <div class="pc-img">
+            <img class="pc-img" src="imagemdrone2.webp" alt="">
+            <i class="bi bi-drone"></i>
+            <span class="pc-badge">Serviços</span>
+          </div>
+          <div class="pc-body">
+            <h6 class="pc-name">Manutenção Preventiva</h6>
+            <p class="pc-desc">Revisão completa: motores, hélices, firmware, bateria e calibração de sensores. Assistência local.</p>
+            <div class="pc-footer">
+              <span class="pc-price">R$ 2.430,00</span>
+              <br>
+              <span class="pc-juros">Em até 36x R$ 110,55 sem juros</span>
+              <br>
+            </div>
+            <span class="pc-frete">Frete Gratis</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-cat="foto">
+        <div class="product-card h-100 bg-light bg-gradient">
+           <div class="pc-img">
+            <img class="pc-img" src="imagemdrone3.webp" alt="">
+            <i class="bi bi-drone"></i>
+            <span class="pc-badge">Fotografia</span>
+          </div>
+          <div class="pc-body">
+            <h6 class="pc-name">DJI Air 3</h6>
+            <p class="pc-desc">Câmera dual, zoom óptico 3x e 46 min de autonomia. O melhor drone de fotografia da sua faixa.</p>
+            <div class="pc-footer">
+              <span class="pc-price">R$ 8.990,00</span>
+              <br>
+              <span class="pc-juros">Em até 18x R$ 810,55 sem juros</span>
+              <br>
+            </div>
+            <span class="pc-frete">Frete Gratis</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-12 col-sm-6 col-lg-4" data-cat="servico">
+        <div class="product-card h-100 bg-light bg-gradient">
+          <div class="pc-img servico-bg">
+            <img src="imagemdrone1.webp" alt="">
+            <!-- <i class="bi bi-mortarboard-fill"></i> -->
+            <span class="pc-badge servico">Serviço</span>
+          </div>
+          <div class="pc-body">
+            <h6 class="pc-name">Drone DJI Neo Standard BR - DJI050</h6>
+            <p class="pc-desc">Pesa apenas 135 g e cabe literalmente dentro do seu bolso. Resistente e com protetores de hélice integrados, é fácil e seguro para levar aonde você quiser.</p>
+
+            <div class="pc-footer">
+              <span class="pc-price">R$ 1.990,00</span>
+              <br>
+              <span class="pc-juros">Em até 18x R$ 110,55 sem juros</span>
+              <br>
+            </div>
+            <span class="pc-frete">Frete Gratis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="main-footer py-4">
+  <div class="container">
+    <div class="row align-items-center gy-3">
+      <div class="col-12 col-md-4 text-center text-md-start">
+        <span class="footer-brand"><i class="bi bi-drone me-2"></i>Aero<strong>Digital</strong></span>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <small class="text-secondary ">Projeto financiado pelo Edital E-Commerce.BR 2026<br/>ABDI · MDIC · Rede AeroDigital Centro-Oeste</small>
+      </div>
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <small class="text-secondary">UFG · Aero Tech · SEBRAE-GO</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="main.js"></script>
+
+</body>
+</html>
